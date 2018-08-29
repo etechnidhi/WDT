@@ -19,4 +19,10 @@ export default {
   color: #2c3e50;
   font-family: "Arimo", sans-serif;
 }
+body{
+  background: #eff3f6;
+  font-family: "Arimo", sans-serif;
+  margin: 0;
+  font-size: 15px;
+}
 </style>
