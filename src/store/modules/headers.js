@@ -1,23 +1,27 @@
-export default{
+export default {
   state: {
     currentTab: '',
-    show: false
+    // show: false
   },
   getters: {
-    getCurrentTab: state => state.currentTab
+    getCurrentTab: state => state.currentTab,
+    // getShow: state => state.show
   },
   actions: {
-    sendCurrentTab ({commit}, payload) {
-      console.log(payload, '0000000000000000')
+    sendCurrentTab ({ commit }, payload) {
+      commit('setTab', payload)
     },
-    showDropdown ({commit}, payload) {
-      console.log(payload, '55555555555555')
-      commit('setShow', payload)
-    }
+    // showDropdown ({ commit }, payload) {
+    //   commit('setShow', payload)
+    // }
   },
-  mtations: {
-    setShow: (state, data) => {
-      console.log(data, '555555555555555555')
+  mutations: {
+    setTab: (state, data) => {
+      state.currentTab = data
     }
+    // setShow: (state, data) => {
+    //   console.log(data)
+    //   state.show = data
+    // }
   }
 }
