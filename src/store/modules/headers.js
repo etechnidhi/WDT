@@ -1,27 +1,18 @@
 export default {
   state: {
-    currentTab: '',
-    // show: false
+    currentTab: ''
   },
   getters: {
-    getCurrentTab: state => state.currentTab,
-    // getShow: state => state.show
+    getCurrentTab: state => state.currentTab
   },
   actions: {
     sendCurrentTab ({ commit }, payload) {
       commit('setTab', payload)
-    },
-    // showDropdown ({ commit }, payload) {
-    //   commit('setShow', payload)
-    // }
+    }
   },
   mutations: {
     setTab: (state, data) => {
       state.currentTab = data
     }
-    // setShow: (state, data) => {
-    //   console.log(data)
-    //   state.show = data
-    // }
   }
 }

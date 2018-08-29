@@ -10,10 +10,7 @@ import fa from 'fontawesome-vue'
 import Home from './pages/Home.vue'
 import 'font-awesome/css/font-awesome.css'
 import store from './store'
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.min.css'
 
-Vue.use(VueMaterial)
 Vue.use(fa)
 Vue.use(BootstrapVue)
 Vue.use(VueRouter)
