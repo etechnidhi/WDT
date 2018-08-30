@@ -1,0 +1,211 @@
+{
+  "Client": [
+    {
+      "title": "Post Job",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": ["Create New Job", "Job Postings"]
+    },
+    {
+      "title": "HIRE",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": ["Candidates", "Intervie", "Offers", "On Boarding", "Hired"]
+    },
+    {
+      "title": "WORK",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": [
+        "Team Room",
+        "Organization",
+        "Projects",
+        "Teams Tasks",
+        "Time-sheet",
+        "My Team"
+      ]
+    },
+    {
+      "title": "PAY",
+      "icon": "<i class='fa fa-usd' aria-hidden='true'></i>",
+      "subchild": [
+        "Invoices",
+        "Time-Sheets",
+        "Time Entry",
+        "Work Diary",
+        "Approvals",
+        "Payments",
+        "Payment",
+        "Setup",
+        "Fees"
+      ]
+    }
+  ],
+  "Team Member": [
+    {
+      "title": "Profile",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": [
+        "Your Info",
+        "Experience Rate",
+        "Availability",
+        "Testing",
+        "Fees"
+      ]
+    },
+    {
+      "title": "Get Hired",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": [
+        "Search Jobs",
+        "My Jobs",
+        "Interviews",
+        "Short Listed",
+        "Offers",
+        "On Boarding",
+        "Hired",
+        "My Clients"
+      ]
+    },
+    {
+      "title": "Work",
+      "icon": "<i class='fa fa-list-ul' aria-hidden='true'></i>",
+      "subchild": ["Work Rooms", "Time Tracking", "Time Sheets"]
+    },
+    {
+      "title": "Get Paid",
+      "icon": "<i class='fa fa-usd' aria-hidden='true'></i>",
+      "subchild": ["Link", "Link", "Link", "Link", "Link", "Link", "Link"]
+    }
+  ],
+  "HR": [
+    {
+      "title": "Job Postings",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": ["New Jobs", "Assigned"]
+    },
+    {
+      "title": "Promote",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": ["Promote Jobs"]
+    },
+    {
+      "title": "Interview",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": ["Interviews"]
+    },
+    {
+      "title": "Hire",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": ["Customer Input", "Offer", "Decision", "Onboarding"]
+    },
+    {
+      "title": "Customer Service",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": ["Customer Service", "Fees"]
+    }
+  ],
+  "Company Admin": [
+    {
+      "title": "Set Up",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": ["Company Info", "Information", "Invoices", "Billing", "Fees"]
+    },
+    {
+      "title": "Users",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": ["List", "Roles"]
+    },
+    {
+      "title": "Approvals",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": ["Approvals"]
+    },
+    {
+      "title": "Payments",
+      "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
+      "subchild": ["Payments"]
+    },
+    {
+      "title": "Reports",
+      "icon": "<i class='fa fa-usd' aria-hidden='true'></i>",
+      "subchild": ["Payments"]
+    }
+  ],
+  "Exchange Admin": [
+    {
+      "title": "Setup",
+      "icon": "<i class='fa fa-floppy-o' aria-hidden='true'></i>",
+      "subchild": [
+        "Information",
+        "Fees",
+        "Billing",
+        "Connections",
+        "Emails",
+        "Customers",
+        "Rate"
+      ]
+    },
+    {
+      "title": "Options",
+      "icon": "<i class='fa fa-floppy-o' aria-hidden='true'></i>",
+      "subchild": ["Hire", "Work", "Pay"]
+    }
+  ],
+  "Super Admin": [
+    {
+      "title": "Exchanges",
+      "icon": "<i class='fa fa-link' aria-hidden='true'></i>",
+      "subchild": [
+        "Exchanges",
+        "AddExchange",
+        "Fess",
+        "Roles",
+        "Rules",
+        "Services"
+      ]
+    },
+    {
+      "title": "Messaging",
+      "icon": "<i class='fa fa-envelope-o' aria-hidden='true'></i>",
+      "subchild": ["Global", "Filtered", "Automated", "Marketing"]
+    },
+    {
+      "title": "Rports",
+      "icon": "<i class='fa fa-envelope-o' aria-hidden='true'></i>",
+      "subchild": ["Link", "Link", "Link", "Link", "Link", "Link", "Link"]
+    }
+  ],
+  "Skills": [
+    {
+      "title": "Skills",
+      "icon": "<i class='fa fa-envelope-o' aria-hidden='true'></i>",
+      "subchild": ["Skills", "Categories", "Job Titles"]
+    },
+    {
+      "title": "Behavioral",
+      "icon": "<i class='fa fa-envelope-o' aria-hidden='true'></i>",
+      "subchild": [
+        "Aptitude",
+        "Languages",
+        "Traits",
+        "Locations",
+        "Expectations"
+      ]
+    },
+    {
+      "title": "Certifications",
+      "icon": "<i class='fa fa-usd' aria-hidden='true'></i>",
+      "subchild": [
+        "Education",
+        "Certifications",
+        "Awards",
+        "Licenses",
+        "Titles",
+        "Tests"
+      ]
+    },
+    {
+      "title": "Skill AI",
+      "icon": "<i class='fa fa-usd' aria-hidden='true'></i>",
+      "subchild": ["Success Factors", "Relevance", "Results", "Learnings"]
+    }
+  ]
+}

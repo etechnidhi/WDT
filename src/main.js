@@ -7,7 +7,7 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import fa from 'fontawesome-vue'
-// import Home from './pages/Home.vue'
+import Home from './pages/Home.vue'
 import Login from './pages/Login.vue'
 import 'font-awesome/css/font-awesome.css'
 import store from './store'
@@ -18,8 +18,8 @@ Vue.use(VueRouter)
 Vue.config.productionTip = false
 
 const routes = [
-  // {path: '/', component: Home},
-  {path: '/', component: Login}
+  {path: '/', component: Login},
+  {path: '/home', component: Home}
 ]
 const router = new VueRouter({
   routes
