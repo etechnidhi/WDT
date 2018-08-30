@@ -20,7 +20,7 @@ export default {
   font-family: "Arimo", sans-serif;
 }
 body{
-  background: #eff3f6;
+  background: #eff3f6 !important;
   font-family: "Arimo", sans-serif;
   margin: 0;
   font-size: 15px;
