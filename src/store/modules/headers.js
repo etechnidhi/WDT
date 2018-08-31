@@ -1,26 +1,29 @@
+import role from './../../json/role.json'
 export default {
   state: {
-    currentTab: '',
-    role: ''
+    roleJson: role,
+    role: '',
+    RoleContent: []
   },
   getters: {
-    getCurrentTab: state => state.currentTab,
-    getRole: state => state.role
+    getRole: state => state.role,
+    getRoleJson: state => state.roleJson,
+    getRoleContent: state => state.RoleContent
   },
   actions: {
-    sendCurrentTab ({ commit }, payload) {
-      commit('setTab', payload)
-    },
     sendRole ({commit}, payload) {
       commit('setRole', payload)
+    },
+    sendRoleContent ({commit}, payload) {
+      commit('setRoleContent', payload)
     }
   },
   mutations: {
-    setTab: (state, data) => {
-      state.currentTab = data
-    },
     setRole: (state, data) => {
       state.role = data
+    },
+    setRoleContent: (state, data) => {
+      state.RoleContent = data.subchild
     }
   }
 }

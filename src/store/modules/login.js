@@ -11,7 +11,6 @@ export default {
   },
   actions: {
     sendError ({commit}, payload) {
-      console.log(payload, '000000000000')
       commit('setError', payload)
     }
   },

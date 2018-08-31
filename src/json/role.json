@@ -8,7 +8,7 @@
     {
       "title": "HIRE",
       "icon": "<i class='fa fa-user-o' aria-hidden='true'></i>",
-      "subchild": ["Candidates", "Intervie", "Offers", "On Boarding", "Hired"]
+      "subchild": ["Candidates", "Interview", "Offers", "On Boarding", "Hired"]
     },
     {
       "title": "WORK",
