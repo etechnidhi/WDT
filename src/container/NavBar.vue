@@ -1,7 +1,7 @@
 <template>
     <div id="topnav">
-      <TopNav :role="getRole"></TopNav>
-      <HeaderNav :role="getRole" :getRoleJsonData="getRoleJson"></HeaderNav>
+      <TopNav :role="getUser.role"></TopNav>
+      <HeaderNav :role="getUser.role" :getRoleJsonData="getRoleJson"></HeaderNav>
       <SubHeader :roleContent="getRoleContent"></SubHeader>
     </div>
 </template>
@@ -20,7 +20,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-      getRole: 'getRole',
+      getUser: 'getUser',
       getRoleContent: 'getRoleContent',
       getRoleJson: 'getRoleJson'
     })

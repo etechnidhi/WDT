@@ -1,7 +1,7 @@
-import role from './../../json/role.json'
+import UserRoleComponent from './../../json/UserRoleComponent.json'
 export default {
   state: {
-    roleJson: role,
+    roleJson: UserRoleComponent,
     RoleContent: []
   },
   getters: {

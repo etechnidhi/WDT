@@ -15,9 +15,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'PageTitle'
-  }
+export default {
+  name: 'PageTitle'
+}
 </script>
 
 <style>

@@ -143,7 +143,7 @@
 
 <script>
 export default {
-  name: 'Icons',
+  name: 'SubHeaderMenu',
   data () {
     return {
       showmenu: false,

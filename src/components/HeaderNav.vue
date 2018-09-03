@@ -8,7 +8,7 @@
                 </a>
             </div>
             <!-- end of logo -->
-            <Icons/>
+            <SubHeaderMenu/>
             <!-- components of role -->
             <div class="menu-extras topbar-custom main-nav">
                 <ul class="list-inline float-right mb-0" id="breadcrumbs-two">
@@ -27,13 +27,13 @@
 </template>
 
 <script>
-import Icons from './Icons.vue'
+import SubHeaderMenu from './SubHeaderMenu.vue'
 import {mapActions} from 'vuex'
 export default {
   name: 'HeaderNav',
   props: ['role', 'getRoleJsonData'],
   components: {
-    Icons
+    SubHeaderMenu
   },
   methods: {
     ...mapActions(['sendRoleContent']),

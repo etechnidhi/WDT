@@ -1,16 +1,14 @@
 import { getField, updateField } from 'vuex-map-fields'
-import data from './../../json/data.json'
+import UserData from './../../json/UserData.json'
 export default {
   state: {
-    data: data,
+    data: UserData,
     error: false,
     errorMessage: '',
-    role: '',
     user: {}
   },
   getters: {
     getField,
-    getRole: state => state.role,
     getErrorMessage: state => state.errorMessage,
     isError: state => state.error,
     getUser: state => state.user
@@ -29,7 +27,8 @@ export default {
       for (var i = 0; i < state.data.length; i++) {
         if (state.data[i].email === data.email && state.data[i].password === data.password) {
           state.role = state.data[i].role
-          state.user = data
+          state.user = state.data[i]
+          console.log(state.user, '666666666666666')
         }
       }
       if (state.role !== '') {
