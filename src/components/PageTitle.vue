@@ -39,4 +39,7 @@
 .breadcrumb-item.active {
     color: #868e96;
 }
+.page-title-box {
+    padding: 1px 0 20px;
+}
 </style>

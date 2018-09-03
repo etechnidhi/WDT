@@ -1,16 +1,16 @@
 <template>
     <div id="topnav">
       <TopNav :role="getRole"></TopNav>
-      <HeaderNav :role="getRole"></HeaderNav>
+      <HeaderNav :role="getRole" :getRoleJsonData="getRoleJson"></HeaderNav>
       <SubHeader :roleContent="getRoleContent"></SubHeader>
     </div>
 </template>
 
 <script>
 import {mapGetters} from 'vuex'
-import HeaderNav from './HeaderNav.vue'
-import SubHeader from './SubHeader.vue'
-import TopNav from './TopNav.vue'
+import TopNav from './../components/TopNav.vue'
+import HeaderNav from './../components/HeaderNav.vue'
+import SubHeader from './../components/SubHeader.vue'
 export default {
   name: 'NavBar',
   components: {
@@ -21,7 +21,8 @@ export default {
   computed: {
     ...mapGetters({
       getRole: 'getRole',
-      getRoleContent: 'getRoleContent'
+      getRoleContent: 'getRoleContent',
+      getRoleJson: 'getRoleJson'
     })
   }
 }
