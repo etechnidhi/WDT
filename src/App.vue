@@ -19,5 +19,6 @@ export default {
   color: #2c3e50;
   font-family: "Arimo", sans-serif;
   background: #eff3f6;
+  font-size: 15px;
 }
 </style>

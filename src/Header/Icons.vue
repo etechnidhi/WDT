@@ -149,7 +149,7 @@ export default {
       showmenu: false,
       showmenu2: false,
       showmenu3: false,
-      showmenu4: false,
+      showmenu4: false
     }
   },
   methods: {
@@ -157,7 +157,7 @@ export default {
       this.showmenu = !this.showmenu
     },
     showMenu2: function () {
-        this.showmenu2 = !this.showmenu2
+      this.showmenu2 = !this.showmenu2
     },
     showMenu3: function () {
       this.showmenu3 = !this.showmenu3

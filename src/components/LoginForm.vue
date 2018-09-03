@@ -22,37 +22,35 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
-import data from './../json/data.json'
 export default {
   name: 'LoginForm',
   data () {
     return {
       email: '',
-      password: '',
-      data: data
+      password: ''
+    }
+  },
+  watch: {
+    getUser: function (value) {
+      if (value.email) {
+        this.$router.push('/home')
+      }
     }
   },
   computed: {
     ...mapGetters({
       isError: 'isError',
-      getErrorMessage: 'getErrorMessage'
+      getErrorMessage: 'getErrorMessage',
+      getUser: 'getUser'
     })
   },
   methods: {
-    ...mapActions(['sendRole', 'sendError']),
+    ...mapActions(['sendRole', 'sendError', 'loginDetail']),
     login: function () {
-      let role
-      data.forEach(value => {
-        if (this.email === value.email && this.password === value.password) {
-          role = value.role
-        }
+      this.loginDetail({
+        email: this.email,
+        password: this.password
       })
-      if (role) {
-        this.sendRole(role)
-        this.$router.push('/home')
-      } else {
-        this.sendError('Invalid Email or Password')
-      }
     }
   }
 }
