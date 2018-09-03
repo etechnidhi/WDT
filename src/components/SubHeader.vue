@@ -4,7 +4,7 @@
             <div id="navigation" class="active">
                 <ul class="navigation-menu">
                     <li class="has-submenu" v-for="(val,index) in roleContent" :key="index">
-                        <a href="#">{{val}}</a>
+                        <a href="#" @click="getpage(val)">{{val.name}}</a>
                     </li>
                 </ul>
             </div>
@@ -13,9 +13,20 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
   name: 'SubHeader',
-  props: ['roleContent']
+  props: ['roleContent'],
+  methods: {
+    ...mapActions(['sendContentInfo']),
+    getpage: function (e) {
+      this.sendContentInfo({
+        name: e.name,
+        pagetitle: e.pagetitle,
+        prefix: e.prefix
+      })
+    }
+  }
 }
 </script>
 

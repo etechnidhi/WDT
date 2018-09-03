@@ -36,14 +36,19 @@ export default {
     SubHeaderMenu
   },
   methods: {
-    ...mapActions(['sendRoleContent']),
+    ...mapActions(['sendRoleContent', 'sendContentInfo']),
     getContent: function (val) {
       this.sendRoleContent(val)
     }
   },
   mounted () {
-    let role = this.$store.state.headers.roleJson[this.$store.state.headers.role]
+    let role = this.$store.state.headers.roleContentJson[this.role]
     this.sendRoleContent(role[0])
+    this.sendContentInfo({
+      name: role[0].subchild[0].name,
+      pagetitle: role[0].subchild[0].pagetitle,
+      prefix: role[0].subchild[0].prefix
+    })
   }
 }
 </script>

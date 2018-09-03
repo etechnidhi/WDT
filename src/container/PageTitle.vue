@@ -4,19 +4,25 @@
       <div class="page-title-box">
         <div class="btn-group pull-right">
           <ol class="breadcrumb hide-phone p-0 m-0" id="background">
-            <li class="breadcrumb-item"><a href="#">Client Desk</a></li>
-            <li class="breadcrumb-item active">Create New Job</li>
+            <li class="breadcrumb-item"><a href="#">{{getPageInfo.prefix}}</a></li>
+            <li class="breadcrumb-item active">{{getPageInfo.pagetitle}}</li>
           </ol>
         </div>
-        <h4 class="page-title" id="title">Create New Job</h4>
+        <h4 class="page-title" id="title">{{getPageInfo.pagetitle}}</h4>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-  name: 'PageTitle'
+  name: 'PageTitle',
+  computed: {
+    ...mapGetters({
+      getPageInfo: 'getPageInfo'
+    })
+  }
 }
 </script>
 

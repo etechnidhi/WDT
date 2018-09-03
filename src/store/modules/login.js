@@ -28,7 +28,6 @@ export default {
         if (state.data[i].email === data.email && state.data[i].password === data.password) {
           state.role = state.data[i].role
           state.user = state.data[i]
-          console.log(state.user, '666666666666666')
         }
       }
       if (state.role !== '') {

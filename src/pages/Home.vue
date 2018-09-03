@@ -18,7 +18,7 @@
 
 <script>
 import NavBar from './../container/NavBar.vue'
-import PageTitle from './../components/PageTitle.vue'
+import PageTitle from './../container/PageTitle.vue'
 import BodyContent from './../components/BodyContent.vue'
 export default {
   name: 'Home',
