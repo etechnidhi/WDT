@@ -1,14 +1,19 @@
 import UserRoleComponent from './../../json/UserRoleComponent.json'
+import LeftMenuJson from './../../json/LeftMenuData.json'
 export default {
   state: {
     roleContentJson: UserRoleComponent,
+    LeftMenuData: LeftMenuJson,
     RoleContent: [],
-    pageInfo: {}
+    pageInfo: {},
+    LeftmenuObject: {}
   },
   getters: {
     getRoleJson: state => state.roleContentJson,
     getRoleContent: state => state.RoleContent,
-    getPageInfo: state => state.pageInfo
+    getPageInfo: state => state.pageInfo,
+    getLeftMenuData: state => state.LeftMenuData,
+    getLeftMenuName: state => state.LeftmenuObject
   },
   actions: {
     sendRoleContent ({commit}, payload) {
@@ -16,6 +21,9 @@ export default {
     },
     sendContentInfo ({commit}, payload) {
       commit('setPageTitle', payload)
+    },
+    LeftMenuContentName ({commit}, payload) {
+      commit('setMenuName', payload)
     }
   },
   mutations: {
@@ -24,6 +32,9 @@ export default {
     },
     setPageTitle: (state, data) => {
       state.pageInfo = data
+    },
+    setMenuName: (state, data) => {
+      state.LeftmenuObject = data
     }
   }
 }

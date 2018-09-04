@@ -2,7 +2,7 @@
     <div id="topnav">
       <TopNav :role="getUser.role"></TopNav>
       <HeaderNav :role="getUser.role" :getRoleJsonData="getRoleJson"></HeaderNav>
-      <SubHeader :roleContent="getRoleContent"></SubHeader>
+      <SubHeader :roleContent="getRoleContent" :pageInfo="getPageInfo"></SubHeader>
     </div>
 </template>
 
@@ -22,7 +22,8 @@ export default {
     ...mapGetters({
       getUser: 'getUser',
       getRoleContent: 'getRoleContent',
-      getRoleJson: 'getRoleJson'
+      getRoleJson: 'getRoleJson',
+      getPageInfo: 'getPageInfo'
     })
   }
 }

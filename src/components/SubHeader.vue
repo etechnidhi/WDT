@@ -3,7 +3,7 @@
         <div class="container-fluid" id="fluid">
             <div id="navigation" class="active">
                 <ul class="navigation-menu">
-                    <li class="has-submenu" v-for="(val,index) in roleContent" :key="index">
+                    <li class="has-submenu " v-for="(val,index) in roleContent" :key="index" v-bind:class="{ active_bg: (pageInfo.name === val.name)}">
                         <a href="#" @click="getpage(val)">{{val.name}}</a>
                     </li>
                 </ul>
@@ -16,7 +16,7 @@
 import { mapActions } from 'vuex'
 export default {
   name: 'SubHeader',
-  props: ['roleContent'],
+  props: ['roleContent', 'pageInfo'],
   methods: {
     ...mapActions(['sendContentInfo']),
     getpage: function (e) {
@@ -31,9 +31,15 @@ export default {
 </script>
 
 <style>
-#topnav .navigation-menu > li:first-child{
+/* #topnav .navigation-menu > li:first-child{
     background-color: #0097a7 !important;
     color: #fff !important;
+} */
+#topnav .navigation-menu > li.active_bg{
+    background-color: #0097a7 !important;
+}
+#topnav .navigation-menu > li.active_bg a{
+    color: #ffffff !important;
 }
 #fluid{
     width: 95%;
@@ -50,10 +56,17 @@ a,a:hover{
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     padding-left: 0;
 }
+.btn-primary {
+    background-color: #0f9cf3;
+    border: 1px solid #0f9cf3;
+}
+.btn-primary:hover{
+    background-color: #0b8ddd;
+    border: 1px solid #0b8ddd;
+}
 @media (min-width: 992px){
 #topnav .navigation-menu > li:first-of-type > a {
     padding-left: 25px;
-    color: white;
 }
 }
 </style>

@@ -7,25 +7,28 @@
         <div class="row" style="min-height: 400px;" id="container-content">
           <div class="col-lg-12">
             <div class="tab-container">
-              <BodyContent/>
+              <LeftMenuBar/>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- <Footer/> -->
   </div>
 </template>
 
 <script>
 import NavBar from './../container/NavBar.vue'
 import PageTitle from './../container/PageTitle.vue'
-import BodyContent from './../components/BodyContent.vue'
+import LeftMenuBar from './../container/LeftMenuBar.vue'
+// import Footer from './../components/Footer.vue'
 export default {
   name: 'Home',
   components: {
     NavBar,
     PageTitle,
-    BodyContent
+    LeftMenuBar
+    // Footer
   }
 }
 </script>

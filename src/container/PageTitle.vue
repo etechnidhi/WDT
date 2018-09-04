@@ -37,7 +37,6 @@ export default {
 #title{
   float: left;
   font-weight: bold;
-  color: black;
 }
 #background{
   background: transparent;
