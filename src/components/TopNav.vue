@@ -1,64 +1,36 @@
 <template>
-    <div>
-        <b-nav class="d-flex justify-content-end text-dark" id="topnav">
-            <b-nav-item id="role" disabled>ROLE <i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i></b-nav-item>
-            <b-nav-item v-bind:class="{ active: (currentTab === 'client')}" @click="client"><i class="fa fa-check fa-1x" id="check" aria-hidden="true"></i>Client</b-nav-item>
-            <b-nav-item v-bind:class="{ active: (currentTab === 'teamMember')}" @click="teamMember">Team Member</b-nav-item>
-            <b-nav-item v-bind:class="{ active: (currentTab === true)}" @click="Hr">HR</b-nav-item>
-            <b-nav-item v-bind:class="{ active: (currentTab === true)}" @click="CompanyAdmin">Company Admin</b-nav-item>
-            <b-nav-item v-bind:class="{ active: (currentTab === true)}" @click="exchangeAmin">Exchange Admin</b-nav-item>
-            <b-nav-item v-bind:class="{ active: (currentTab === true)}" @click="superAdmin">Super Admin</b-nav-item>
-            <b-nav-item v-bind:class="{ active: (currentTab === true)}" @click="skills">Skills</b-nav-item>
-        </b-nav>
-    </div>
+    <ul class="nav justify-content-end desk">
+        <li class="nav-item" id="role">
+            <span class="nav-link role"> ROLE <i class="fa fa-angle-double-right" aria-hidden="true" id="roleIcon"></i></span>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link active" href="#"><i class="fa fa-check color" aria-hidden="true"></i>{{role}}</a>
+        </li>
+    </ul>
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'TopNav',
-  computed: {
-    ...mapGetters({
-      getCurrentTab: 'getCurrentTab'
-    })
-  },
-  methods: {
-    ...mapActions(['sendCurrentTab']),
-    client: function () {
-      this.sendCurrentTab({
-        currentTab: 'client'
-      })
-    },
-    teamMember: function () {
-      this.sendCurrentTab({
-        currentTab: 'teamMember'
-      })
-    }
-  }
+  props: ['role']
 }
 </script>
 
 <style>
-#topnav{
-    border-bottom: 1px solid #eee;
-    font-size: 12px;
-}
-a,
-a:hover{
-    color: black;
-}
-#role{
-    font-weight: bold;
-    color: #909090 !important;
-    margin-right: 10px;
-}
-.fa-lg {
-        font-size: 1.53em;
-}
-#check{
+.color {
     color: red;
 }
-.active{
-    font-weight: bold;
+#breadcrumbs-two li:last-child a:after {
+    right: 0em;
+}
+#breadcrumbs-two li:nth-child(2) a {
+    background: #B9DCE8 !important;
+    color: #343a40 !important;
+}
+#breadcrumbs-two li:nth-child(2) a:before {
+    border-color: #B9DCE8 #B9DCE8 #B9DCE8 transparent;
+}
+#breadcrumbs-two li:nth-child(2) a::after {
+    border-left-color: #B9DCE8;
 }
 </style>
